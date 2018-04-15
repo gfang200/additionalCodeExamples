@@ -25,11 +25,11 @@ A select sample of scripts that I've written to scrape the web. It includes exam
 #### DatastudioTools #### 
 This one's got a pretty cool story! While doing consulting work for Accenture, one of my clients had her heart set on downloading graphs from one of Google's analytics tool, Datastudio. Unfortunately, the product did not support this feature. <br/><br/>Of course, the rational course of action here would be to give up and explain that it's not possible, but instead of that I build a tool that pulls in SVG images, extracts the vector & text data, and finally redraws the image on a PNG, thus rendering the image in a downloadable state. Bonus points since it supported transparency layers too!
 
-#### GameLTVModel #### 
-This is an early version of a model I developed alongside a data scientist. It is designed to calculate the player lifetime value for a mobile game based on the initial actions of the user. As the data engineer on this engagement, my main role on the team was to translate the model into Python code, transform training data into a consumable state, build back-testing modules, and deploy the code into a live production environment.  <br/><br/>*Note that this is an alpha version of the model, for confidentiality reasons, I can't share the full model!
-
 #### selectWorksFromFreemo #### 
 A few select code samples from a WebApp project I built in NodeJS. In summary, it's an app that runs selenium scripts on a scalable kubernetes cloud container engine to interact with web models at scale. There's a few examples of back-end controllers, as well as a few examples of front end work using partials and swig.
+
+#### GameLTVModel #### 
+This is an early version of a model I developed alongside a data scientist. It is designed to calculate the player lifetime value for a mobile game based on the initial actions of the user. As the data engineer on this engagement, my main role on the team was to translate the model into Python code, transform training data into a consumable state, build back-testing modules, and deploy the code into a live production environment.  <br/><br/>*Note that this is an alpha version of the model, for confidentiality reasons, I can't share the full model!
 
 #### excelHomeworkHacking #### 
 This one is pretty troll. I was a TA for a business excel class once where the professors were **SUPER** proud of these xslm macros they created to detect cheating in their classrooms. They would spend a few hours every semester talking about how the system couldn't be beaten. After watching some bankers use excel without a mouse, I used a windows scripting language that supported hardware emulation to create a system that emulated keyboard inputs to complete homework assingments.  I never distributed this to students, since I don't condone cheating, but it was pretty trollerino to show the professors that I could beat their system.
