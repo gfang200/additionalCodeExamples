@@ -112,19 +112,6 @@ def createLTVDataset(game_sqldict,startdate,game_id,game_name):
 
 if __name__=='__main__':
 
-    #user = raw_input("LDAP: ")
-    #_pass_ = getpass.getpass('password: ')
-
-    user='gfang'
-    _pass_='P450+bm3'
-
-    conn_info = {'host': 'stats-read.zynga.com',
-             'port': 5433,
-             'user': user,
-             'password': _pass_,
-             'database': 'warehouse',
-             'read_timeout': 6000}
-
 
     # TODO: use all clients & dates if not specified
     game_id = 5002535
