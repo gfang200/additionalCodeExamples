@@ -8,7 +8,7 @@ Interesting Singletons
 Implementation of the basic concepts of genetic algorithms. Just an exercize, but still pretty cool IMO. Starting from a base population of random strings, I used a basic fitness function and roulette sampling to randomly breed high scoring strings from the population. This continues until an optimal solution is found (the solution string is reached).
 
 #### plagiarismDetector.py ####
-Object oriented implementation of an n-gram analysis to detect plagiarism in code. As the lead undergraduate instructor, I built this after I found a few students cheating on their programming assignments. Uses an implementation of unionFind to group students together with similar assignments.
+Object oriented implementation of an n-gram analysis to detect plagiarism in code. As a lead undergraduate instructor, I built this after I found a few students cheating on their programming assignments. Uses an implementation of unionFind to group students together with similar assignments.
 
 #### insertMerge.py ####
 An exercise I got during a whiteboarding interview to merge overlapping tuples. I thought it was an interesting problem, so I built out the implementation after the interview.
