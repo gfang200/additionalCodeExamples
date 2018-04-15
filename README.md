@@ -1,6 +1,6 @@
 Hacks, Experiments, and Scripts
 ============
-This repository contains a sample of the interesting work that I've done over the years. The code that you'll find here highlights my biggest strengths: intellectual curiosity, coding chops, scripting & scraping, some data structure/algo implemetnation, general tomfoolery, and just building really cool stuff.
+This repository contains a sample of the interesting work that I've done over the years. The code that you'll find here highlights my biggest strengths: intellectual curiosity, coding chops, scripting & scraping, some data structures work, general tomfoolery, and just building really cool stuff.
 
 Interesting Singletons
 --------------- 
