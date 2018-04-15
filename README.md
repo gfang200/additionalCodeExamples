@@ -20,7 +20,7 @@ A select sample of scripts that I've written to scrape the web. It includes exam
 * Working with iFrames in Selenium
 * Overcoming shadow root nodes in the DOM by dynamically generating xdotool shell scripts.
 * Recursive search in web scraping
-* Basic URLLib usage to scrape metadata & download images 
+* Basic URLLib usage to scrape metadata into XML & download images 
 
 #### DatastudioTools #### 
 This one's got a pretty cool story! While doing consulting work for Accenture, one of my clients had her heart set on downloading graphs from one of Google's analytics tool, Datastudio. Unfortunately, the product did not support this feature. <br/><br/>Of course, the rational course of action here would be to give up and explain that it's not possible, but instead of that I build a tool that pulls in SVG images, extracts the vector & text data, and finally redraws the image on a PNG, thus rendering the image in a downloadable state. Bonus points since it supported transparency layers too!
