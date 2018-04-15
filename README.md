@@ -11,7 +11,7 @@ Implementation of the basic concepts of genetic algorithms. Just an exercize, bu
 Object oriented implementation of an n-gram analysis to detect plagiarism in code. As a lead undergraduate instructor, I built this after I found a few students cheating on their programming assignments. Uses an implementation of unionFind to group students together with similar assignments.
 
 #### insertMerge.py ####
-An exercise I got during a whiteboarding interview to merge overlapping tuples. I thought it was an interesting problem and I wanted to figure it out so I finished the code after the interview.
+An exercise I got during a whiteboarding interview to merge overlapping tuples. I thought it was an interesting problem and I wanted to figure it out, so, I finished the code after the interview.
 
 Sample Projects
 --------------- 
