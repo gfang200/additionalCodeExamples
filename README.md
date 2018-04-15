@@ -2,7 +2,7 @@ Hacks, Experiments, and Scripts
 ============
 This repository contains a sample of the interesting work that I've done over the years. The code that you'll find here highlights my biggest strengths: intellectual curiosity, coding chops, scripting & scraping, some data structures work, general tomfoolery, and just building really cool stuff.
 
-Interesting Singletons
+Singleton Highlights
 --------------- 
 #### geneticAlgorithm.py #### 
 Implementation of the basic concepts of genetic algorithms. Just an exercize, but still pretty cool IMO. Starting from a base population of random strings, I used a basic fitness function and roulette sampling to randomly breed high scoring strings from the population. This continues until an optimal solution is found (the solution string is reached).
