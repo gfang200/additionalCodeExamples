@@ -5,7 +5,7 @@ This repository contains a sample of the interesting work that I've done over th
 Interesting Singletons
 --------------- 
 #### geneticAlgorithm.py #### 
-Implementation of the basic concepts of genetic algorithms. Not super complex, but still pretty cool. Starting from a base population of random strings, I used a basic fitness function and roulette sampling to randomly breed high scoring strings from the population. This continues until an optimal solution is found (the solution string is reached).
+Implementation of the basic concepts of genetic algorithms as an exersize. Not super complex, but still pretty cool. Starting from a base population of random strings, I used a basic fitness function and roulette sampling to randomly breed high scoring strings from the population. This continues until an optimal solution is found (the solution string is reached).
 
 #### plagiarismDetector.py ####
 Object oriented implementation of an n-gram analysis on student programming assignments to detect plagiarism. I built this after I found a few students cheating in a programming class I lead as an undergraduate instructor. Uses an implementation of unionFind to group students together with similar assignments.
