@@ -1,6 +1,6 @@
 Hacks, Experiments, and Scripts
 ============
-This repository contains interesting work that I've done over the years. The code that you'll find here definitely highlights my top strengths, intellectual curiosity, coding chops, scripting & scraping, some data structure/algo implemetnation, general tomfoolery, and just building really cool stuff.
+This repository contains interesting work that I've done over the years. The code that you'll find here highlights my top strengths, intellectual curiosity, coding chops, scripting & scraping, some data structure/algo implemetnation, general tomfoolery, and just building really cool stuff.
 
 Interesting Singletons
 --------------- 
@@ -35,4 +35,4 @@ A few select code samples from a WebApp project I've been working on recently in
 This one is pretty troll. I was a TA for a business excel class once where the professors were **SUPER** proud of these xslm macros they created to detect cheating in their classrooms. They would spend a few hours every semester talking about how the system couldn't be beaten. After watching some bankers use excel without a mouse, I used a windows scripting language that supported hardware emulation to create a system that emulated keyboard inputs to complete homework assingments.  I never distributed this to students, since I don't condone cheating, but it was pretty trollerino to show the professors that I could beat their system.
 
 #### BONUSreallyCoolExcelModel #### 
-This one's not even code. I found this in one of my old desktop backups while looking for cool stuff to include in my GitHub.    <br/><br/>Before I learned how to code, I learned how to excel. I also didn't let my lack of knowledge of fully functional programming languages stop me from doing cool stuff. One of the things I noticed through observation is that some professors are more lenient graders than other professors. Then, I built this slick, 9 page excel model that took anonymized student GPA data and determined the best professor for each class based on difficulty xD.
+This one's not even code. I found this in one of my old desktop backups while looking for cool stuff to include in my GitHub.    <br/>Before I learned how to code, I learned how to excel. I also didn't let my lack of knowledge of fully functional programming languages stop me from doing cool stuff. One of the things I noticed through observation is that some professors are more lenient graders than other professors. Then, I built this slick, 9 page excel model that took anonymized student GPA data and determined the best professor for each class based on difficulty xD.
