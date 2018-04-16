@@ -1,0 +1,52 @@
+{% extends '../layouts/product.html' %}
+
+{% block title %}Freemo{% endblock %}
+
+{% block content %}
+<!-- start section -->
+<section class="section white-backgorund">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                        <div class="row column-4">
+                    {% for subscription in subs %}
+                    
+                            <div class="col-sm-6 col-md-3">
+                        {% include "../partials/dashboard/new_sub.html" %}
+                    </div><!-- end thumbnail -->
+                
+                    {% endfor %}    
+                </div><!-- end col -->     
+                    
+
+                           
+                    
+        
+        
+   
+         
+
+
+        
+        <!-- start section -->
+        <section>
+            <div class="container">
+                <!-- Modal Product Quick View -->
+                {% for subscription in subs%}
+                    {% include "../partials/dashboard/modal_sub.html" %}
+                {% endfor %}
+            </div><!-- end container -->
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section>
+            <div class="container">
+                <!-- Modal Product Quick View -->
+                {% for subscription in subs%}
+                    {% include "../partials/dashboard/link_sub.html" %}
+                {% endfor %}
+            </div><!-- end container -->
+        </section>
+        <!-- end section -->
+{% endblock %}
