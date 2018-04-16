@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Life is short. Try everything.">
+    <meta name="author" content="George Fang" />
+    <meta name="keywords" content="freemo, subscription, manager, fintech, startup" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+    <!--Favicon-->
+    <link rel="shortcut icon" href="freemonic.png" type="image/x-icon">
+    <link rel="icon" href="freemonic.png" type="image/x-icon">
+    
+    <!-- css files -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/Product/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/Product/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/Product/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/Product/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/Product/animate.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/Product/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/Product/override.css" />
+    <!-- this is default skin you can replace that with: dark.css, yellow.css, red.css ect -->
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="stylesheets/Product/skin-blue.css" />
+    
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    
+</head>
+    <body>
+        <div class="wrapper" style="padding:0px;">
+        {% include "../partials/navbar.html" %}
+        
+        {%- block content -%}{%- endblock-%}
+        {%if path == '/signup' or path=='/signupBilling' or path=='/signupAddress' or path=='/login'%}{%else%}<div class="push"></div>{%endif%}
+        </div>
+        
+        {%if path == '/signup' or path =='/signupBilling' or path=='/signupAddress' or path=='/login' or path=='/startup'%}
+
+        {%else%}
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h5 class="title">Welcome to Freemo</h5>
+                        <p>Trying new things is a lot of fun, trials are hard to manage. That's why we created Freemo, to help all of us try more things easily.</p>
+                        
+                        <hr class="spacer-10 no-border">
+                        
+                        <ul class="social-icons">
+                            <li class="facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="dribbble"><a href="javascript:void(0);"><i class="fa fa-dribbble"></i></a></li>
+                            <li class="linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="youtube"><a href="javascript:void(0);"><i class="fa fa-youtube"></i></a></li>
+                            <li class="behance"><a href="javascript:void(0);"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div><!-- end col -->
+                    <div class="col-sm-3 pull-right">
+                        <h5 class="title">Information</h5>
+                        <ul class="list alt-list">
+                            <li><a href="/blog"><i class="fa fa-angle-right"></i>Freemo Blog</a></li>
+                            <li><a href="/about"><i class="fa fa-angle-right"></i>About Us</a></li>
+                            <li><a href="/terms"><i class="fa fa-angle-right"></i>Terms & Conditions</a></li>
+                            <li><a href="/contact"><i class="fa fa-angle-right"></i>Contact Us</a></li>
+                        </ul>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+                
+                <hr class="spacer-30">
+                
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                        <p class="text-sm">&COPY; Freemo 2018</a></p>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </footer>
+        <!-- end footer -->
+        {%endif%}
+        
+        <!-- JavaScript Files -->
+        <script type="text/javascript" src="javascripts/Product/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="javascripts/Product/bootstrap.min.js"></script>
+        <script type="text/javascript" src="javascripts/Product/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="javascripts/Product/jquery.downCount.js"></script>
+        <script type="text/javascript" src="javascripts/Product/nouislider.min.js"></script>
+        <script type="text/javascript" src="javascripts/Product/jquery.sticky.js"></script>
+        <script type="text/javascript" src="javascripts/Product/pace.min.js"></script>
+        <script type="text/javascript" src="javascripts/Product/star-rating.min.js"></script>
+        <script type="text/javascript" src="javascripts/Product/wow.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript" src="javascripts/Product/gmaps.js"></script>
+        <script type="text/javascript" src="javascripts/Product/swiper.min.js"></script>
+        <script type="text/javascript" src="javascripts/Product/main.js"></script>
+        
+
+        <div class="modal fade myModalSmall" id="myModalSmall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h4 class="modal-title" id="myModalLabel"><span class = "text-primary">Success!</span></h4>
+                    </div><!-- end modal-header -->
+                    <div class="modal-body">
+                            <img style="width:100%" src="http://www.mommyish.com/wp-content/uploads/2017/05/netflix.png"/>
+                            <p>Your Netflix account is now active!</p>
+                            <div class="title-wrap" style="margin-bottom:0px">
+                                    <h5 class="title lines">Login Details</span> </h5>
+                            </div>
+                            <p><b>Username: </b> gfang200@gmail.com</p>
+                            <p><b>Password: </b> quick_battery_staple93</p>
+                            <p><b>Free until: </b> 1/1/2018</p>
+                            <button class="btn btn-default round">Visit Netflix</button>
+
+                    </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end Modal small -->
+
+        <div class="modal fade myModalSmall" id="myModalSmall2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h5 class="modal-title" id="myModalLabel">We're working on your new account. . .</h5>
+                    </div><!-- end modal-header -->
+                    <div class="modal-body">
+                            <img style="width:100%" src="http://www.mommyish.com/wp-content/uploads/2017/05/netflix.png"/>
+                            <p>We'll notify you in a few minutes once your subscription is ready. In the meantime checkout our other cool subscriptions!</p>
+                            <div class="title-wrap" style="margin-bottom:0px">
+                                    <h5 class="title lines">Receipt</span> </h5>
+                            </div>
+                            <p><span class = "text-primary"><b>Plan Details</b></span></p>
+                            <p><b>Plan: </b> Premium ($11.99)</p>
+                            <p><b>Free until: </b> 1/1/2018</p>
+                            <p><span class = "text-primary"><b>Account Details</b></span></p>
+                            <p><b>Username: </b> gfang200@gmail.com</p>
+                            <p><b>Password: </b> quick_battery_staple93</p>
+                            <button class="btn btn-gray round">Got it!</button>
+
+
+
+                    </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end Modal small -->
+
+        <!-- <script type="text/javascript">
+            $(window).on('load',function(){
+                $('#myModalSmall').modal('show');
+            });
+        </script> -->
+    </body>
+</html>
