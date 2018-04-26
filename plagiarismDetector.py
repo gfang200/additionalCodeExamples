@@ -24,8 +24,7 @@ class Student():
         self.rawAssignments = {}
         self.assignments = {}
         self.grams = {}
-##        self.assignmentName = []
-##        self.assignmentText = []
+
 
     def getAssignment(self):
         def hasInfo(inputString):
@@ -101,20 +100,13 @@ def setUp(sensitivity):
             else:
                 middleName = None
             userName = student.split("(")[1][:-1]
-##            print firstName,middleName, lastName, userName
+
             students.append(Student(firstName, middleName, lastName, userName))
     for student in students:
         student.getAssignment()
         student.populateGrams(sensitivity)
     return students
-##def hasInfo(inputString):
-##    return any(char.isdigit() for char in inputString) or any(char.isalpha() for char in inputString)
-##
-##print hasInfo("     ")
-##print hasInfo("x  ")
-##print hasInfo("3")
-##print hasInfo("")
-##print hasInfo("x3  ")
+
 def output_cheats(students):
     for i in range(len(students)):
         home = os.getcwd()
@@ -134,12 +126,11 @@ def output_cheats(students):
 def main():
     students = setUp(6)
     newSet = UnionFind()
-    ##for student in students:
-    ##    newSet[student]
+
     for student in students:
         for student2 in students:
             if compareStudents(student, student2) and student != student2:
-##                print student.userName, student2.userName
+
                 newSet.union(newSet[student],newSet[student2])
     groups = []
     finalGroups = []
@@ -158,71 +149,3 @@ def main():
             
 
 students = main()
-
-##home=os.getcwd()
-##directory = os.listdir(os.getcwd())
-##allFiles=[]
-##averageLength=0
-##numberOfFiles=0
-##for file in directory:
-##    guy= file
-##    if ".py" not in file and ".txt" not in file and ".csv" not in file:
-##        os.chdir(file)
-##        directory=os.listdir(os.getcwd())
-##        os.chdir(directory[len(directory)-1])
-##        files=os.listdir(os.getcwd())
-##        print files
-##        for item in files:
-##            if ".py" in item:
-##                thing=open(item, "r")
-##                proje=thing.read()
-##                words = proje.split("\n")
-##                while True:
-##                    try:
-##                        words.remove("")
-##                    except:
-##                        break
-##                averageLength+=len(words)
-##                numberOfFiles+=1
-##                words.append(item)
-##                allFiles.append(words)
-##                thing.close()
-##        os.chdir(home)
-##
-##
-##averageLength=averageLength/numberOfFiles
-##print averageLength
-##x = getNGrams(allFiles[0], 5)
-##hwGrams = []
-#####CHANGE THE SENSITIVITY NUMBER DEPENDING ON HOW SENSITIVE YOU WANT IT TO BE
-##sensitivity = int(averageLength*.75)
-###sensitivity = 10
-##for homework in allFiles:
-##    hwGrams.append(getNGrams(homework, sensitivity))
-##cheaters=[]    
-##
-##
-##
-##for homework in hwGrams:
-##    for gram in homework:
-##        for homework2 in hwGrams:
-##            for gram2 in homework2:
-##                if gram==gram2 and homework[len(homework)-1][len(homework[len(homework)-1])-1]!=homework2[len(homework2)-1][len(homework2[len(homework2)-1])-1]:
-##                    cheater = (homework[len(homework)-1][len(homework[len(homework)-1])-1], homework2[len(homework2)-1][len(homework2[len(homework2)-1])-1])
-##                    if cheater not in cheaters and (cheater[1],cheater[0]) not in cheaters:
-##                        cheaters.append(cheater)
-##
-##
-##for cheater in cheaters:
-##    print cheater
-##
-##newFile = open("groups.txt", "w")
-##for cheater in cheaters:
-##    newFile.write("Look at " + cheater[0] +" and " + cheater[1])
-##    newFile.write("\n")
-##newFile.close()
-##
-##
-####To Do:
-####Replace all variable names to test for refactoring
-####add statistics tools
